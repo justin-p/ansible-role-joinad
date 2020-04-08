@@ -9,12 +9,12 @@ Based of the work done by [@jborean93](https://github.com/jborean93) in [jborean
 Works on
 
 - Windows Server 2019
-
-Not validated (yet) on
-
 - Windows Server 2016
 - Windows Server 2012R2
 - Windows Server 2012
+
+Not validated (yet) on
+
 - Windows Server 2008R2
 - Windows Server 2008 x64
 - Windows Server 2008 x32

@@ -25,25 +25,25 @@ all:
         #  vagrant_box: jborean93/WindowsServer2008-x86 
     domain_members:
       hosts:
-        Server2019:
+        Mem2019:
           ansible_host: 192.168.56.11
           vagrant_box: jborean93/WindowsServer2019
-        #MemberServer2016:
+        #Mem2016:
         #  ansible_host: 192.168.56.12
         #  vagrant_box: jborean93/WindowsServer2016
-        #MemberServer2012R2:
+        #Mem2012R2:
         #  ansible_host: 192.168.56.13
         #  vagrant_box: jborean93/WindowsServer2012R2
-        #MemberServer2012:
+        #Mem2012:
         #  ansible_host: 192.168.56.14
         #  vagrant_box: jborean93/WindowsServer2012
-        #MemberServer2008R2:
+        #Mem2008R2:
         #  ansible_host: 192.168.56.15
         #  vagrant_box: jborean93/WindowsServer2008R2                                        
-        #MemberServer2008x64:
+        #Mem2008x64:
         #  ansible_host: 192.168.56.16
         #  vagrant_box: jborean93/WindowsServer2008-x64
-        #MemberServer2008x86:
+        #Mem2008x86:
         #  ansible_host: 192.168.56.17
         #  vagrant_box: jborean93/WindowsServer2008-x86                 
   vars:
