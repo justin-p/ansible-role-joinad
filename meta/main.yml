@@ -5,7 +5,7 @@ galaxy_info:
   company: Orange Cyberdefense
   license: MIT
   min_ansible_version: 2.9
-  plattforms:
+  platforms:
   - name: Windows
     versions:
      - 2012R2
@@ -18,4 +18,3 @@ dependencies:
     vars:
       wincom_dns_nics: "{{ joinad_dns_nics }}"
       wincom_dns_servers: "{{ joinad_dns_servers }}"
-  
