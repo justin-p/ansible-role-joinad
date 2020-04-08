@@ -1,0 +1,7 @@
+---
+# defaults file for ansible-joinad
+joinad_dns_nics: "*"
+joinad_dns_servers: 192.168.56.10
+joinad_domain: ad.example.test
+joinad_admin_username: administrator@{{ joinad_domain }}
+joinad_admin_password: P@ssw0rd!

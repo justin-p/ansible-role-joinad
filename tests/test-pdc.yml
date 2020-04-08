@@ -1,0 +1,8 @@
+---
+- hosts: primarydomaincontroller
+  roles:
+    - role: justin_p.pdc
+      version: v0.0.2
+      vars:
+        pdc_dns_nics: "Ethernet 2"
+        pdc_dns_servers: 192.168.56.10

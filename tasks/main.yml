@@ -1,0 +1,19 @@
+---
+# tasks file for ansible-joinad
+- name: Assert mandatory variables have been set
+  assert: { that: "{{ item }} is defined" }
+  with_items:
+    - joinad_dns_nics
+    - joinad_dns_servers
+    - joinad_domain
+    - joinad_admin_username
+    - joinad_admin_password
+
+- name: Ensure {{ ansible_hostname }} is joined to the {{ joinad_domain }} Active Directory domain
+  win_domain_membership:
+    dns_domain_name: "{{ joinad_domain }}"
+    domain_admin_user: "{{ joinad_admin_username }}"
+    domain_admin_password: "{{ joinad_admin_password }}"
+    state: domain
+  register: domain_join
+  notify: Reboot if the host joined the domain
