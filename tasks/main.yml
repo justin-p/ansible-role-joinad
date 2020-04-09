@@ -17,3 +17,6 @@
     state: domain
   register: domain_join
   notify: Reboot if the host joined the domain
+
+- name: Force all notified handlers to run at this point, not waiting for normal sync points
+  meta: flush_handlers
