@@ -2,6 +2,8 @@
 
 ![Travis CI](https://img.shields.io/travis/justin-p/ansible-joinad?style=flat-square)
 
+**This role is not considered done**
+
 This role will join a Windows host to a Active Directory domain.
 
 Based of the work done by [@jborean93](https://github.com/jborean93) in [jborean93/ansible-windows](https://github.com/jborean93/ansible-windows)
