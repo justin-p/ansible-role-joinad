@@ -1,6 +1,6 @@
-# ansible-pdc
+# ansible-join-ad
 
-![Travis CI](https://img.shields.io/travis/justin-p/ansible-joinad?style=flat-square)
+![Travis](https://img.shields.io/travis/justin-p/ansible-role-joinad?label=Travis&logo=travis&style=flat-square)
 
 **This role is not considered done**
 
