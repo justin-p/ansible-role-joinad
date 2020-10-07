@@ -1,7 +1,9 @@
-# ansible-join-ad
+# ansible-role-joinad
 
-![Github Actions](https://img.shields.io/github/workflow/status/justin-p/ansible-role-joinad/CI?label=Github%20Actions&logo=github&style=flat-square)
-![Travis](https://img.shields.io/travis/justin-p/ansible-role-joinad?label=Travis&logo=travis&style=flat-square)
+[![Ansible Role Name](https://img.shields.io/ansible/role/51180?label=Role%20Name&logo=ansible&style=flat-square)](https://galaxy.ansible.com/justin_p/joinad)
+[![Ansible Quality Score](https://img.shields.io/ansible/quality/51180?label=Ansible%20Quality%20Score&logo=ansible&style=flat-square)](https://galaxy.ansible.com/justin_p/joinad)
+[![Ansible Role Downloads](https://img.shields.io/ansible/role/d/51180?label=Ansible%20Role%20Downloads&logo=ansible&style=flat-square)](https://galaxy.ansible.com/justin_p/joinad)
+[![Github Actions](https://img.shields.io/github/workflow/status/justin-p/ansible-role-joinad/CI?label=Github%20Actions&logo=github&style=flat-square)](https://github.com/justin-p/ansible-role-joinad/actions)
 
 **This role is not considered done**
 
