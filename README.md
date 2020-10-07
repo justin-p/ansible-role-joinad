@@ -1,6 +1,5 @@
 # ansible-join-ad
 
-
 ![Github Actions](https://img.shields.io/github/workflow/status/justin-p/ansible-role-joinad/CI?label=Github%20Actions&logo=github&style=flat-square)
 ![Travis](https://img.shields.io/travis/justin-p/ansible-role-joinad?label=Travis&logo=travis&style=flat-square)
 
@@ -31,13 +30,13 @@ Not validated (yet) on
 
 ### `defaults/main.yml`
 
-| Variable              | Default value                     | Explanation                                                                                                                    |
-| :-------------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
-| joinad_dns_nics       | "*"                               | The name of the ethernet adapter to setup DNS on. Defaults to wildcard. 9/10 times you should leave this to the default value. |
-| joinad_dns_servers    | "192.168.56.10"                   | The DNS server to use on joinad_dns_nics. This should be changed to the IP's of your domain controllers.                       |
-| joinad_domain         | ad.example.test                   | The Domain of the new Active Directory Forest. This should be changed your Domain                                              |
-| joinad_admin_username | administrator@{{ joinad_domain }} | The username of the account to add the computer to the domain. Change this depending on your needs.                            |
-| joinad_admin_password | P@ssw0rd!                         | The password of the account to add the computer to the domain. Change this depending on your needs.                            |
+| Variable              | Description                                                                                                                    | Default value                     |
+| :-------------------- | :----------------------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
+| joinad_dns_nics       | The name of the ethernet adapter to setup DNS on. Defaults to wildcard. 9/10 times you should leave this to the default value. | "*"                               |
+| joinad_dns_servers    | The DNS server to use on joinad_dns_nics. This should be changed to the IP's of your domain controllers.                       | "192.168.56.10"                   |
+| joinad_domain         | The Domain of the new Active Directory Forest. This should be changed your Domain                                              | ad.example.test                   |
+| joinad_admin_username | The username of the account to add the computer to the domain. Change this depending on your needs.                            | administrator@{{ joinad_domain }} |
+| joinad_admin_password | The password of the account to add the computer to the domain. Change this depending on your needs.                            | P@ssw0rd!                         |
 
 ## Dependencies
 
