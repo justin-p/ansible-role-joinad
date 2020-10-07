@@ -1,5 +1,7 @@
 # ansible-join-ad
 
+
+![Github Actions](https://img.shields.io/github/workflow/status/justin-p/ansible-role-joinad/CI?label=Github%20Actions&logo=github&style=flat-square)
 ![Travis](https://img.shields.io/travis/justin-p/ansible-role-joinad?label=Travis&logo=travis&style=flat-square)
 
 **This role is not considered done**
