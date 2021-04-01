@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: joinad
+  namespace: justin_p  
   author: Justin Perdok
   description: This role will join a Windows host to a Active Directory domain.
   company: Orange Cyberdefense
