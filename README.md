@@ -34,8 +34,6 @@ Not validated (yet) on
 
 | Variable              | Description                                                                                                                    | Default value                     |
 | :-------------------- | :----------------------------------------------------------------------------------------------------------------------------- | :-------------------------------- |
-| joinad_dns_nics       | The name of the ethernet adapter to setup DNS on. Defaults to wildcard. 9/10 times you should leave this to the default value. | "*"                               |
-| joinad_dns_servers    | The DNS server to use on joinad_dns_nics. This should be changed to the IP's of your domain controllers.                       | "192.168.56.10"                   |
 | joinad_domain         | The Domain of the new Active Directory Forest. This should be changed your Domain                                              | ad.example.test                   |
 | joinad_admin_username | The username of the account to add the computer to the domain. Change this depending on your needs.                            | administrator@{{ joinad_domain }} |
 | joinad_admin_password | The password of the account to add the computer to the domain. Change this depending on your needs.                            | P@ssw0rd!                         |
@@ -43,8 +41,8 @@ Not validated (yet) on
 ## Dependencies
 
 - WinRM on the windows host should configured for Ansible.
+- justin_p.posh5
 - justin_p.wincom
-  - justin_p.posh5
 
 ## Example Playbook
 
