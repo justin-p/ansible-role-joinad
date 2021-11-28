@@ -50,7 +50,9 @@ Not validated (yet) on
 
     - hosts: domain_members
       roles:
-         - { role: justin_p.joinad }
+         - role: justin_p.posh5
+         - role: justin_p.wincom      
+         - role: justin_p.joinad
 
 ## Local Development
 
