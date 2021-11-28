@@ -3,8 +3,6 @@
 - name: Assert mandatory variables have been set
   assert: { that: "{{ item }} is defined" }
   with_items:
-    - joinad_dns_nics
-    - joinad_dns_servers
     - joinad_domain
     - joinad_admin_username
     - joinad_admin_password
