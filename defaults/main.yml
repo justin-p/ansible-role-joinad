@@ -5,3 +5,5 @@ joinad_dns_servers: 192.168.56.10
 joinad_domain: ad.example.test
 joinad_admin_username: administrator@{{ joinad_domain }}
 joinad_admin_password: P@ssw0rd!
+joinad_reboot_timeout: 600
+joinad_post_reboot_delay: 300
