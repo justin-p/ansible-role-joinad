@@ -37,6 +37,8 @@ Not validated (yet) on
 | joinad_domain         | The Domain of the new Active Directory Forest. This should be changed your Domain                                              | ad.example.test                   |
 | joinad_admin_username | The username of the account to add the computer to the domain. Change this depending on your needs.                            | administrator@{{ joinad_domain }} |
 | joinad_admin_password | The password of the account to add the computer to the domain. Change this depending on your needs.                            | P@ssw0rd!                         |
+| joinad_reboot_timeout  | Maximum seconds to wait for machine to re-appear on the network and respond to a test command. | 600 |
+| joinad_post_reboot_delay | Seconds to wait after the reboot command was successful before attempting to validate the system rebooted successfully. | 300 |
 
 ## Dependencies
 
