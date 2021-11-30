@@ -2,5 +2,6 @@
 # handlers file for ansible-joinad
 - name: Reboot if the host joined the domain
   win_reboot:
-    post_reboot_delay: 300
+    post_reboot_delay: "{{ joinad_post_reboot_delay }}"
+    reboot_timeout: "{{ joinad_reboot_timeout }}"
   when: domain_join.reboot_required
