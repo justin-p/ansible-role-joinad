@@ -1,14 +1,14 @@
 ---
 # tasks file for ansible-joinad
 - name: Assert mandatory variables have been set
-  assert: { that: "{{ item }} is defined" }
+  ansible.builtin.assert: { that: "{{ item }} is defined" }
   with_items:
     - joinad_domain
     - joinad_admin_username
     - joinad_admin_password
 
 - name: Ensure host is joined to the {{ joinad_domain }} Active Directory domain
-  win_domain_membership:
+  ansible.windows.win_domain_membership:
     dns_domain_name: "{{ joinad_domain }}"
     domain_admin_user: "{{ joinad_admin_username }}"
     domain_admin_password: "{{ joinad_admin_password }}"
@@ -17,4 +17,4 @@
   notify: Reboot if the host joined the domain
 
 - name: Force all notified handlers to run at this point, not waiting for normal sync points
-  meta: flush_handlers
+  ansible.builtin.meta: flush_handlers
